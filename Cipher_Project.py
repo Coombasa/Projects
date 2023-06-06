@@ -76,6 +76,7 @@ class Cipher:
             return rmess
 
     # Leverage the encode method to run multiple passes of the same encoding.
+    # This isn't a particularly useful function, cryptographically speaking
     def m_encode(self, n, mess=None, file=False, path=None):
         if file:
             if path is None:
